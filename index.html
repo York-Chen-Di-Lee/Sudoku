@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>數獨遊戲</title>
+    <link rel="icon" href="image/LOGO_Chendy_Lee.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="CSS/skin.css"/>
+</head>
+    <body>
+        <div id="the_9x9_frames">
+            <!--block-->
+            <div class="square" id="square1">
+                <div class="block" id="block-11"></div>
+                <div class="block" id="block-12"></div>
+                <div class="block" id="block-13"></div>
+                <div class="block" id="block-21"></div>
+                <div class="block" id="block-22"></div>
+                <div class="block" id="block-23"></div>
+                <div class="block" id="block-31"></div>
+                <div class="block" id="block-32"></div>
+                <div class="block" id="block-33"></div>
+            </div>
+            <div class="square" id="square2">
+                <div class="block" id="block-14"></div>
+                <div class="block" id="block-15"></div>
+                <div class="block" id="block-16"></div>
+                <div class="block" id="block-24"></div>
+                <div class="block" id="block-25"></div>
+                <div class="block" id="block-26"></div>
+                <div class="block" id="block-34"></div>
+                <div class="block" id="block-35"></div>
+                <div class="block" id="block-36"></div>
+            </div>
+            <div class="square" id="square3">
+                <div class="block" id="block-17"></div>
+                <div class="block" id="block-18"></div>
+                <div class="block" id="block-19"></div>
+                <div class="block" id="block-27"></div>
+                <div class="block" id="block-28"></div>
+                <div class="block" id="block-29"></div>
+                <div class="block" id="block-37"></div>
+                <div class="block" id="block-38"></div>
+                <div class="block" id="block-39"></div>
+            </div>
+            <div class="square" id="square4">
+                <div class="block" id="block-41"></div>
+                <div class="block" id="block-42"></div>
+                <div class="block" id="block-43"></div>
+                <div class="block" id="block-51"></div>
+                <div class="block" id="block-52"></div>
+                <div class="block" id="block-53"></div>
+                <div class="block" id="block-61"></div>
+                <div class="block" id="block-62"></div>
+                <div class="block" id="block-63"></div>
+            </div>
+            <div class="square" id="square5">
+                <div class="block" id="block-44"></div>
+                <div class="block" id="block-45"></div>
+                <div class="block" id="block-46"></div>
+                <div class="block" id="block-54"></div>
+                <div class="block" id="block-55"></div>
+                <div class="block" id="block-56"></div>
+                <div class="block" id="block-64"></div>
+                <div class="block" id="block-65"></div>
+                <div class="block" id="block-66"></div>
+            </div>
+            <div class="square" id="square6">
+                <div class="block" id="block-47"></div>
+                <div class="block" id="block-48"></div>
+                <div class="block" id="block-49"></div>
+                <div class="block" id="block-57"></div>
+                <div class="block" id="block-58"></div>
+                <div class="block" id="block-59"></div>
+                <div class="block" id="block-67"></div>
+                <div class="block" id="block-68"></div>
+                <div class="block" id="block-69"></div>
+            </div>
+            <div class="square" id="square7">
+                <div class="block" id="block-71"></div>
+                <div class="block" id="block-72"></div>
+                <div class="block" id="block-73"></div>
+                <div class="block" id="block-81"></div>
+                <div class="block" id="block-82"></div>
+                <div class="block" id="block-83"></div>
+                <div class="block" id="block-91"></div>
+                <div class="block" id="block-92"></div>
+                <div class="block" id="block-93"></div>
+            </div>
+            <div class="square" id="square8">
+                <div class="block" id="block-74"></div>
+                <div class="block" id="block-75"></div>
+                <div class="block" id="block-76"></div>
+                <div class="block" id="block-84"></div>
+                <div class="block" id="block-85"></div>
+                <div class="block" id="block-86"></div>
+                <div class="block" id="block-94"></div>
+                <div class="block" id="block-95"></div>
+                <div class="block" id="block-96"></div>
+            </div>
+            <div class="square" id="square9">
+                <div class="block" id="block-77"></div>
+                <div class="block" id="block-78"></div>
+                <div class="block" id="block-79"></div>
+                <div class="block" id="block-87"></div>
+                <div class="block" id="block-88"></div>
+                <div class="block" id="block-89"></div>
+                <div class="block" id="block-97"></div>
+                <div class="block" id="block-98"></div>
+                <div class="block" id="block-99"></div>
+            </div>
+            <div id = "victory"></div>
+            <div id = "loading"></div>
+            <div id = "thankyou"></div>
+        </div>
+        <div id="bottom1">Show Answer</div>
+        <div id="bottom2">Cheat</div>
+        <div id="bottom3">Refresh</div>
+        <img id = "answer" src="Answer.png" width = "500" height = "500"/>
+        <script src="JavaScript/cpu.js"></script>
+    </body>
+</html>

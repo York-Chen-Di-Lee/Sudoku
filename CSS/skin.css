@@ -1,0 +1,206 @@
+/*Main frame*/
+#the_9x9_frames{
+    position:relative;
+    border:3px solid black;
+    width:538px;
+    height:538px;
+    gap:0px 0px;
+}
+/*bottom 1*/
+#bottom1, #bottom2, #bottom3{
+    position:relative;
+    border:3px solid black;
+    width:400px;
+    height:50px;
+    left: 550px;
+    bottom:450px;
+    font-family:fantasy;
+    color:azure;
+    font-size: 50px;
+    line-height:50px ;
+    text-align:center;
+    background-image: url(https://thumbs.dreamstime.com/b/grunge-gray-banner-abstract-stone-background-texture-stone-wall-close-up-rock-texture-closeup-light-gray-stone-173854619.jpg);
+}
+#bottom1{
+    left: 550px;
+    bottom:450px;
+}
+#bottom2{
+    left: 550px;
+    bottom:400px;
+}
+#bottom3{
+    left: 550px;
+    bottom:350px;
+}
+/*answer*/
+#answer{
+    position:relative;
+    background-color: white;
+    left:1000px;
+    bottom:700px;
+}
+
+/*All the square*/
+.square{
+    position:absolute;
+    width:177.4px;
+    height:177.4px;
+    border:1px solid black;
+}
+#square1{
+    top:0%;
+    left:0%;
+}
+#square2{
+    top:0%;
+    left:50%;
+    transform:translate(-50%,0%);
+}
+#square3{
+    top:0%;
+    right:0%;
+}
+#square4{
+    top:50%;
+    transform:translate(0,-50%);
+}
+#square5{
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+#square6{
+    top:50%;
+    right:0%;
+    transform:translate(0,-50%);
+}
+#square7{
+    bottom:0%;
+    left:0%;
+}
+#square8{
+    bottom:0%;
+    left:50%;
+    transform:translate(-50%,0%);
+}
+#square9{
+    bottom:0%;
+    right:0%;
+}
+.block{
+    position:absolute;
+    width:58px;
+    height:58px;
+    border:1px solid black;
+}
+/*blacks in square1*/
+#block-11,#block-14,#block-17,#block-41,#block-44,#block-47,#block-71,#block-74,#block-77{
+    left:0%;
+}
+#block-12,#block-15,#block-18,#block-42,#block-45,#block-48,#block-72,#block-75,#block-78{
+    left:50%;
+    transform:translate(-50%,0%);
+}
+#block-13,#block-16,#block-19,#block-43,#block-46,#block-49,#block-73,#block-76,#block-79{
+    left:100%;
+    transform:translate(-100%,0%);
+}
+#block-21,#block-24,#block-27,#block-51,#block-54,#block-57,#block-81,#block-84,#block-87{
+    top:50%;
+    transform:translate(0,-50%);
+}
+#block-22,#block-25,#block-28,#block-52,#block-55,#block-58,#block-82,#block-85,#block-88{
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+#block-23,#block-26,#block-29,#block-53,#block-56,#block-59,#block-83,#block-86,#block-89{
+    top:50%;
+    left:100%;
+    transform:translate(-100%,-50%);
+}
+#block-31,#block-34,#block-37,#block-61,#block-64,#block-67,#block-91,#block-94,#block-97{
+    top:100%;
+    transform:translate(0,-100%);
+}
+#block-32,#block-35,#block-38,#block-62,#block-65,#block-68,#block-92,#block-95,#block-98{
+    top:100%;
+    left:50%;
+    transform:translate(-50%,-100%);
+}
+#block-33,#block-36,#block-39,#block-63,#block-66,#block-69,#block-93,#block-96,#block-99{
+    top:100%;
+    left:100%;
+    transform:translate(-100%,-100%);
+}
+/*victory screen*/
+@keyframes rotating{
+    from {
+        top:50%;
+        width:540px;
+        height:200px;        
+        transform: rotate(0deg);
+    }
+    to {
+        top:50%;
+        width:540px;
+        height:200px;
+        transform: rotate(720deg);
+    }
+}
+@keyframes fade_in{
+    from {
+        opacity:0%;
+    }
+    to {
+        opacity:100%;
+    }
+}
+@keyframes moveup_fade_in{
+    from {
+        opacity:0%;
+        top:400px;
+    }
+    to {
+        opacity:100%;
+        top:150px;
+    }
+}
+@keyframes fade_out{
+    from {
+        opacity:100%;
+    }
+    to {
+        opacity:0%;
+    }
+}
+#victory{
+    position:relative;
+    top:50%;
+    background-color:red;
+    animation-iteration-count: 1;
+}
+#victory_title{
+    position:absolute;
+}
+#question{
+    position:absolute;
+}
+#yes{
+    position:absolute;   
+}
+#no{
+    position:absolute;
+}
+#loading{
+    position:relative;
+    left:65px;
+}
+#thankyou{
+    position:relative;
+    left:65px;
+}
+#sentence{
+    position:absolute;
+}
