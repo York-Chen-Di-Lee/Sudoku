@@ -78,7 +78,14 @@ var block = [[0,0,0,0,0,0,0,0,0]
             ,[0,0,0,0,0,0,0,0,0]
             ,[0,0,0,0,0,0,0,0,0]
             ,[0,0,0,0,0,0,0,0,0]];
-
+var eightyone = 0; 
+function filter(){
+    console.log("PASS!");
+    eightyone ++;
+    if(eightyone == 1){
+        victory();
+    }
+}
 /*load the setting data*/            
 for ( var i = 0 ; i < 9 ; i ++ ){
     for ( var j = 0 ; j < 9 ; j ++ ){
@@ -640,7 +647,7 @@ function conditions_review(){
     console.log("column total:"+column_accumulation);
     console.log("block total:"+block_accumulation);
     if ( row_accumulation == 81 && column_accumulation == 81 && block_accumulation == 81 ){
-        victory();
+        filter();
     }
     else{
         var screen = document.getElementById("victory");
@@ -693,11 +700,12 @@ var count = 0;
 var bottom1 = document.getElementById("bottom1");
 var bottom2 = document.getElementById("bottom2");
 var bottom3 = document.getElementById("bottom3");
+var bottom4 = document.getElementById("bottom4");
 var answer = document.getElementById("answer");
 answer.style.opacity = "0%";
 bottom1.addEventListener("mouseenter",function(){
     this.style.color = "yellow";
-    window.addEventListener("click",function(event){
+    this.addEventListener("click",function(event){
         if(bottom2.style.color != "yellow"){
             if(bottom3.style.color != "yellow"){
                 setTimeout(function(){
@@ -717,10 +725,10 @@ bottom1.addEventListener("mouseenter",function(){
 
 bottom2.addEventListener("mouseenter",function(){
     this.style.color = "yellow";
-    bottom2.addEventListener("mouseout",function(){
+    this.addEventListener("mouseout",function(){
         this.style.color = "azure";
     })
-    window.addEventListener("click",function(event){
+    this.addEventListener("click",function(event){
         if(bottom1.style.color != "yellow"){
             if(bottom3.style.color != "yellow"){
                 count++;
@@ -737,10 +745,10 @@ bottom2.addEventListener("mouseenter",function(){
 
 bottom3.addEventListener("mouseenter",function(){
     this.style.color = "yellow";
-    bottom3.addEventListener("mouseout",function(){
+    this.addEventListener("mouseout",function(){
         this.style.color = "azure";
     })
-    window.addEventListener("click",function(event){
+    this.addEventListener("click",function(event){
         if(bottom1.style.color != "yellow"){
             if(bottom2.style.color != "yellow"){
                 window.location.reload();
@@ -748,8 +756,6 @@ bottom3.addEventListener("mouseenter",function(){
         }
     })
 })
-
-
 
 var pass = " ";
 window.addEventListener("keypress",function(event){
