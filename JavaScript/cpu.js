@@ -670,7 +670,7 @@ function input(number){
                 array[m][n] = number;
                 single_out(number,m,n);
                 conditions_review();
-            }
+            }            
         }
     }
 }
@@ -688,7 +688,7 @@ for ( var i = 0 ; i < 9 ; i ++ ){
                     if (number==1||number==2||number==3||number==4||number==5||number==6||number==7||number==8||number==9){
                         input(number);
                     }
-                })          
+                })     
             })
             item.addEventListener("mouseout",function(){
                 this.style.backgroundColor="white";
